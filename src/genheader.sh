@@ -3,7 +3,7 @@
 AddToHeader () 
 {
     echo "/* $1 */" >> $2
-    cat $1 | grep "^[int|unsigned|long|void|short|char].*)$" >> $2
+    cat $1 | grep "^[int|unsigned|long|void|short|char|struct].*)$" >> $2
     echo "" >> $2
 }
 
